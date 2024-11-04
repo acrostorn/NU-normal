@@ -3,77 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NU Normal - ホームページ</title>
+    <title>NU-normal - アプリ公式サイト</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 20px 0;
+            width: 100%;
         }
-        nav {
+        main {
+            padding: 20px;
+            max-width: 800px;
+        }
+        .app-image {
+            width: 100%;
+            max-width: 400px;
             margin: 20px 0;
         }
-        nav a {
-            margin: 0 15px;
-            color: #4CAF50;
-            text-decoration: none;
+        .download-buttons {
+            margin: 20px 0;
         }
-        section {
-            padding: 20px;
-            background-color: white;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
+        .download-buttons a {
             background-color: #4CAF50;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .privacy-policy {
+            margin: 20px 0;
+        }
+        .privacy-policy a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>NU Normal</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <h1>NU-normal</h1>
+    <p>あなたの日常をより便利にするアプリ</p>
 </header>
 
-<section id="about">
-    <h2>About</h2>
-    <p>NU Normalは、シンプルで使いやすいアプリを提供します。</p>
-</section>
+<main>
+    <h2>NU-normalとは？</h2>
+    <p>NU-normalは、日常生活の様々なタスクを簡単にこなすためのアプリです。使いやすさとシンプルなデザインを追求しました。</p>
 
-<section id="features">
-    <h2>Features</h2>
-    <ul>
-        <li>使いやすいインターフェース</li>
-        <li>高いパフォーマンス</li>
-        <li>豊富な機能</li>
-    </ul>
-</section>
+    <img src="path/to/your-image.jpg" alt="NU-normalアプリのイメージ" class="app-image">
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>お問い合わせは<a href="mailto:example@example.com">こちら</a>からどうぞ。</p>
-</section>
+    <div class="download-buttons">
+        <a href="#">App Storeからダウンロード</a>
+        <a href="#">Google Playからダウンロード</a>
+    </div>
+</main>
 
 <footer>
-    <p>&copy; 2024 NU Normal</p>
+    <div class="privacy-policy">
+        <a href="path/to/privacy-policy.html">プライバシーポリシー</a>
+    </div>
+    <p>&copy; 2024 NU-normal</p>
 </footer>
 
 </body>
