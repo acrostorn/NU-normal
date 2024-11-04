@@ -5,48 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NU-normal - アプリ公式サイト</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* リセット */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            width: 100%;
+
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
         }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+        }
+        
         main {
-            padding: 20px;
+            padding: 40px 20px;
             max-width: 800px;
+            text-align: center;
         }
+
         .app-image {
             width: 100%;
-            max-width: 400px;
-            margin: 20px 0;
+            max-width: 600px;
+            border-radius: 20px;
+            margin-top: 30px;
         }
+
+        .features {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        
         .download-buttons {
-            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 15px;
         }
+        
         .download-buttons a {
-            background-color: #4CAF50;
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1em;
+            font-weight: 500;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            font-size: 16px;
+            border-radius: 8px;
+            background-color: #007aff;
+            transition: background-color 0.3s;
         }
-        .privacy-policy {
-            margin: 20px 0;
+        
+        .download-buttons a:hover {
+            background-color: #005bb5;
         }
+        
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         .privacy-policy a {
-            color: #4CAF50;
+            color: #007aff;
             text-decoration: none;
+            font-size: 1em;
+        }
+
+        .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -54,12 +115,11 @@
 
 <header>
     <h1>NU-normal</h1>
-    <p>あなたの日常をより便利にするアプリ</p>
+    <p>シンプルなデザインで、日常のタスクをもっと簡単に</p>
 </header>
 
 <main>
-    <h2>NU-normalとは？</h2>
-    <p>NU-normalは、日常生活の様々なタスクを簡単にこなすためのアプリです。使いやすさとシンプルなデザインを追求しました。</p>
+    <p class="features">NU-normalは、あなたの生活をより便利にするためのアプリです。シンプルで直感的な操作性で、日常の管理をスムーズに行えます。</p>
 
     <img src="path/to/your-image.jpg" alt="NU-normalアプリのイメージ" class="app-image">
 
